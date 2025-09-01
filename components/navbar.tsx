@@ -11,32 +11,32 @@ export function Navbar() {
           YouCare
         </Link>
         <nav className="hidden md:flex gap-8">
-          {/* Landing page links */}
+          {/* Landing page links (Chinese) */}
           <Link href="/" className="text-muted-foreground hover:text-primary">
-            About us
+            关于我们
           </Link>
           <a href="#services" className="text-muted-foreground hover:text-primary">
-            Services
+            服务
           </a>
           <a href="#process" className="text-muted-foreground hover:text-primary">
-            Process
+            流程
           </a>
           <a href="#faq" className="text-muted-foreground hover:text-primary">
-            FAQ
+            常见问题
           </a>
         </nav>
         <div className="hidden md:flex items-center gap-3">
-          {/* New feature links */}
+          {/* Booking and record links (Chinese) */}
           <Link href="/book" className="text-muted-foreground hover:text-primary">
-            Book
+            预约咨询
           </Link>
           <Link href="/bookings" className="text-muted-foreground hover:text-primary">
-            Bookings
+            预约管理
           </Link>
           <Link href="/records" className="text-muted-foreground hover:text-primary">
-            Records
+            健康档案
           </Link>
-          <Button size='sm'>Sign up</Button>
+          <Button size='sm'>注册</Button>
         </div>
       </div>
     </header>

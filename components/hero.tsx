@@ -54,45 +54,45 @@ export function Hero() {
     <section className="py-12 md:py-24 bg-white">
       <div className="container grid md:grid-cols-2 gap-10 items-center">
         <div>
-          <Badge className="mb-4">Revolutionize Healthcare</Badge>
+          {/* Chinese translation of the hero section as in the original design */}
+          <Badge className="mb-4">革新医疗保健</Badge>
           <h1 className="section-title mb-4">
-            Transform <span className="text-blue-600">Your Health</span>
+            改变 <span className="text-blue-600">您的健康</span>
           </h1>
-          <p className="lead mb-6">
-            Explore a wide range of services aimed at enhancing your overall health and wellness.
-          </p>
+          <p className="lead mb-6">探索旨在提升您整体健康和福祉的多样化服务。</p>
           <div className="flex gap-4 mb-10">
-            <Button>Learn More</Button>
-            <Button variant="outline">Get Started</Button>
+            <Button>了解更多</Button>
+            <Button variant="outline">开始使用</Button>
           </div>
+          {/* Animated stats translated to Chinese */}
           <div ref={ref} className="grid grid-cols-2 gap-x-12 gap-y-8 max-w-md">
             <div className="text-center">
               <div className="text-2xl font-bold">
                 <CountUp to={13} play={inView} fmt={(n) => `${Math.round(n)}+`} />
               </div>
-              <div className="text-muted-foreground text-sm">Years of Experience</div>
+              <div className="text-muted-foreground text-sm">多年经验</div>
             </div>
             <div className="text-center">
               <div className="text-2xl font-bold">
                 <CountUp to={85} play={inView} fmt={(n) => `${Math.round(n)}+`} />
               </div>
-              <div className="text-muted-foreground text-sm">Professional Doctors</div>
+              <div className="text-muted-foreground text-sm">专业医生</div>
             </div>
             <div className="text-center">
               <div className="text-2xl font-bold">
                 <CountUp to={3} play={inView} fmt={(n) => `${Math.round(n)}M+`} />
               </div>
-              <div className="text-muted-foreground text-sm">Happy Patients</div>
+              <div className="text-muted-foreground text-sm">满意患者</div>
             </div>
             <div className="text-center">
               <div className="text-2xl font-bold">
                 <CountUp to={85} play={inView} fmt={(n) => `${Math.round(n)}+`} />
               </div>
-              <div className="text-muted-foreground text-sm">Successful Treatments</div>
+              <div className="text-muted-foreground text-sm">成功治疗</div>
             </div>
           </div>
         </div>
-        {/* Right side placeholder image */}
+        {/* Placeholder image area as in original design */}
         <div className="flex justify-center">
           <div className="w-80 h-64 bg-blue-50 rounded-2xl flex items-center justify-center">
             <p className="text-muted-foreground">[Image Placeholder]</p>

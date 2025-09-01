@@ -1,6 +1,14 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+// Import global styles scoped to the app directory. Use a relative path
+// starting with './' because this file lives in the same directory as
+// globals.css. Using '../globals.css' would incorrectly resolve to the
+// parent directory and cause a module resolution error.
 import './globals.css';
+
+// Import the floating chat assistant so it can be rendered globally. Use a
+// named import because FabChat exports a named function.
+import { FabChat } from '@/components/chat/FabChat';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -14,7 +22,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     // Set language to Simplified Chinese
     <html lang='zh-CN'>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {children}
+        {/* Render the chatbot globally so it appears on every page */}
+        <FabChat />
+      </body>
     </html>
   );
 }
