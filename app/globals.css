@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply text-foreground bg-[#f7f9fc];
+}
+
+.card {
+  @apply bg-white border border-border rounded-2xl shadow-soft;
+}
+
+.section-title {
+  @apply text-3xl md:text-4xl font-semibold tracking-tight;
+}
+
+.lead {
+  @apply text-muted-foreground;
+}
+
+.bg-dots {
+  background-image: radial-gradient(#E5E7EB 1px, transparent 1px);
+  background-size: 16px 16px;
+}

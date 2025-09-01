@@ -1,0 +1,13 @@
+# Dependencies & builds
+node_modules/
+.npm/
+.pnpm-store/
+.next/
+out/
+dist/
+build/
+coverage/
+*.log
+.env*
+.vercel/
+.turbo/
